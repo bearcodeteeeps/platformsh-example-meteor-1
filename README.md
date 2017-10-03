@@ -1,4 +1,4 @@
-# Platform.sh meteorJS example
+# Platform.sh [Meteor](https://www.meteor.com/) example
 
 ## Deploy
 
