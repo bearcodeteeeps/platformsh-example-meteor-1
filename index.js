@@ -18,11 +18,9 @@ if(base64PlatformRelationships && base64PlatformRoutes) {
   var database = platformRelationships.database[0];
 
   var platformRoutes = JSON.parse(atob(base64PlatformRoutes));
-  console.log(platformRelationships);
   var rootUrl = Object.keys(platformRoutes)[0];
 
-  var cmd = "PORT="+port+" MONGO_URL="+database.scheme+"://"+database.username+":"+database.password+"@"+database.host+":"+database.port+"/"+database.path+" ROOT_URL="+rootUrl+" node ./build/bundle/main.js --port "+port;
-  console.log(cmd);
+  var cmd = "PORT="+port+" MONGO_URL="+database.scheme+"://"+database.username+":"+database.password+"@"+database.host+":"+database.port+"/"+database.path+" ROOT_URL="+rootUrl+" node ./build/bundle/main.js";
 
   exec(cmd, puts);
 }
