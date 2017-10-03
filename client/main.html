@@ -1,0 +1,35 @@
+<head>
+  <title>event-app</title>
+</head>
+
+<body>
+  {{> userForm}}
+  {{> users}}
+</body>
+
+<template name="userForm">
+  <form class="new-user">
+    <input type="text" name="name" placeholder="Name" />
+    <input type="text" name="email" placeholder="Email" />
+    <input type="submit" />
+  </form>
+</template>
+
+<template name="users">
+  <table>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+    </tr>
+    {{#each users}}
+      {{> user}}
+    {{/each}}
+  </table>
+</template>
+
+<template name="user">
+    <tr>
+      <td>{{name}}</td>
+      <td>{{email}}</td>
+    </tr>
+</template>
