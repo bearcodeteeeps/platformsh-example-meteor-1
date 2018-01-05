@@ -1,5 +1,5 @@
 {
-  "name": "event-app",
+  "name": "platformsh-example-meteor",
   "private": true,
   "scripts": {
     "build": "meteor build ./build --architecture os.linux.x86_64",
