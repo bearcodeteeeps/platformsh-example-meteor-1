@@ -16,7 +16,7 @@ hooks:
     # Build hooks can modify the application files on disk but not access any services like databases.
     build: |
       cd ./build
-      tar -xf meteor-platformsh.tar.gz
+      tar -xf platformsh-example-meteor.tar.gz
       cd bundle
       (cd ./programs/server && npm install)
 
